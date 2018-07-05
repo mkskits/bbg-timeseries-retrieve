@@ -2,6 +2,7 @@
 
 import blpapi
 from optparse import OptionParser
+import pandas as pd
 
 
 def parseCmdLine():
@@ -54,6 +55,7 @@ def main():
         request = refDataService.createRequest("HistoricalDataRequest")
         # request.getElement("securities").appendValue("IBM US Equity")
         request.getElement("securities").appendValue("EURUSD BGN Curncy")
+        request.getElement("securities").appendValue("USDCHF BGN Curncy")
         request.getElement("fields").appendValue("PX_LAST")
         request.getElement("fields").appendValue("OPEN")
         request.set("periodicityAdjustment", "ACTUAL")
@@ -67,16 +69,38 @@ def main():
         session.sendRequest(request)
 
         # Process received events
+        i=0
         while(True):
             # We provide timeout to give the chance for Ctrl+C handling:
             ev = session.nextEvent(500)
             for msg in ev:
-                print ''
-                # print msg
+                print 'placeholder'
+                i = i + 1
+                print msg
+
+                # msg.getElement('securityData').getElementAsString('security')
+                # print(msg.getElement('securityData').getElementAsString('security'))
 
             if ev.eventType() == blpapi.Event.RESPONSE:
                 # Response completly received, so we could exit
                 break
+
+        msg.getElement('securityData').getElementAsString('security')
+        print msg.getElement('securityData').getElementAsString('security')
+
+        columns = ['OPEN', 'LAST']
+        df = pd.DataFrame(columns=columns)
+
+        for test in msg.getElement('securityData').getElement('fieldData').values():
+            date = test.getElementAsDatetime('date')
+            print(date)
+            px_open = test.getElementAsFloat('OPEN')
+            print(px_open)
+            px_last = test.getElementAsFloat('PX_LAST')
+            print(px_last)
+            # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
+            # dft.set_index(date, inplace=True, drop=False, append=False)
+
     finally:
         # Stop the session
         session.stop()
@@ -88,16 +112,6 @@ def main():
         #         print(fieldData.elements())
         #         for n in range(field.getElementAsString()):
         #             print(field)
-
-        msg.getElement('securityData').getElementAsString('security')
-
-        for test in msg.getElement('securityData').getElement('fieldData').values():
-            date = test.getElementAsDatetime('date')
-            print(date)
-            px_open = test.getElementAsFloat('OPEN')
-            print(px_open)
-            px_last = test.getElementAsFloat('PX_LAST')
-            print(px_last)
 
         # print(str)
         # print(msg)
