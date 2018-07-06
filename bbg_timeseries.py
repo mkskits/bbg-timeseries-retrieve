@@ -73,10 +73,25 @@ def main():
         while(True):
             # We provide timeout to give the chance for Ctrl+C handling:
             ev = session.nextEvent(500)
+            # print msg.getElement('securityData').getElementAsString('security')
             for msg in ev:
-                print 'placeholder'
+                # print 'placeholder'
                 i = i + 1
-                print msg
+                try:
+                    print msg.getElement('securityData').getElementAsString('security')
+                    for test in msg.getElement('securityData').getElement('fieldData').values():
+                        date = test.getElementAsDatetime('date')
+                        print(date)
+                        px_open = test.getElementAsFloat('OPEN')
+                        print(px_open)
+                        px_last = test.getElementAsFloat('PX_LAST')
+                        print(px_last)
+                        # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
+                        # dft.set_index(date, inplace=True, drop=False, append=False)
+                except:
+                    print 'no securityData found'
+                # this works and sends everything to the debug window
+                # print msg
 
                 # msg.getElement('securityData').getElementAsString('security')
                 # print(msg.getElement('securityData').getElementAsString('security'))
@@ -85,21 +100,21 @@ def main():
                 # Response completly received, so we could exit
                 break
 
-        msg.getElement('securityData').getElementAsString('security')
-        print msg.getElement('securityData').getElementAsString('security')
+                # msg.getElement('securityData').getElementAsString('security')
+                # print msg.getElement('securityData').getElementAsString('security')
 
-        columns = ['OPEN', 'LAST']
-        df = pd.DataFrame(columns=columns)
+        # columns = ['OPEN', 'LAST']
+        # df = pd.DataFrame(columns=columns)
 
-        for test in msg.getElement('securityData').getElement('fieldData').values():
-            date = test.getElementAsDatetime('date')
-            print(date)
-            px_open = test.getElementAsFloat('OPEN')
-            print(px_open)
-            px_last = test.getElementAsFloat('PX_LAST')
-            print(px_last)
-            # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
-            # dft.set_index(date, inplace=True, drop=False, append=False)
+        # for test in msg.getElement('securityData').getElement('fieldData').values():
+        #     date = test.getElementAsDatetime('date')
+        #     print(date)
+        #     px_open = test.getElementAsFloat('OPEN')
+        #     print(px_open)
+        #     px_last = test.getElementAsFloat('PX_LAST')
+        #     print(px_last)
+        #     # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
+        #     # dft.set_index(date, inplace=True, drop=False, append=False)
 
     finally:
         # Stop the session
