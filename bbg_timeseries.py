@@ -1,5 +1,3 @@
-# SimpleHistoryExample.py
-
 import blpapi
 from optparse import OptionParser
 import pandas as pd
@@ -70,6 +68,10 @@ def main():
 
         # Process received events
         i=0
+        columns = ['OPEN', 'LAST', 'DATE', 'SEC']
+        dftt = pd.DataFrame([[1, 1, 1, 1]], columns=columns)
+        pd_data = pd.DataFrame(columns=columns)
+
         while(True):
             # We provide timeout to give the chance for Ctrl+C handling:
             ev = session.nextEvent(500)
@@ -80,60 +82,32 @@ def main():
                 try:
                     print msg.getElement('securityData').getElementAsString('security')
                     for test in msg.getElement('securityData').getElement('fieldData').values():
+                        del dftt
+                        sec = msg.getElement('securityData').getElementAsString('security')
                         date = test.getElementAsDatetime('date')
                         print(date)
                         px_open = test.getElementAsFloat('OPEN')
                         print(px_open)
                         px_last = test.getElementAsFloat('PX_LAST')
                         print(px_last)
-                        # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
+                        d = {'col1': [1, 2], 'col2': [3, 4]}
+                        df = pd.DataFrame(data=d)
+                        dftt = pd.DataFrame([[px_open, px_last, date, sec]], columns=columns)
+                        # print d
+                        # print dftt
+                        pd_data.append(dftt, ignore_index=True)
                         # dft.set_index(date, inplace=True, drop=False, append=False)
+                        print('t')
                 except:
-                    print 'no securityData found'
-                # this works and sends everything to the debug window
-                # print msg
-
-                # msg.getElement('securityData').getElementAsString('security')
-                # print(msg.getElement('securityData').getElementAsString('security'))
+                    pass
 
             if ev.eventType() == blpapi.Event.RESPONSE:
                 # Response completly received, so we could exit
                 break
-
-                # msg.getElement('securityData').getElementAsString('security')
-                # print msg.getElement('securityData').getElementAsString('security')
-
-        # columns = ['OPEN', 'LAST']
-        # df = pd.DataFrame(columns=columns)
-
-        # for test in msg.getElement('securityData').getElement('fieldData').values():
-        #     date = test.getElementAsDatetime('date')
-        #     print(date)
-        #     px_open = test.getElementAsFloat('OPEN')
-        #     print(px_open)
-        #     px_last = test.getElementAsFloat('PX_LAST')
-        #     print(px_last)
-        #     # dft = pd.DataFrame([[px_open, px_last]], columns=columns, index = date)
-        #     # dft.set_index(date, inplace=True, drop=False, append=False)
-
     finally:
         # Stop the session
         session.stop()
 
-        # securityDataArray = msg.getElement('securityData')
-        # for securityData in securityDataArray.values():
-        #    fieldData = securityData.getElement("fieldData")
-        #    for field in fieldData.elements():
-        #         print(fieldData.elements())
-        #         for n in range(field.getElementAsString()):
-        #             print(field)
-
-        # print(str)
-        # print(msg)
-        # print("%.2f" % fieldData.getElementAsFloat("FULL_REPO_PX_MID"))
-        # print(fieldData.getElementAsString("PX_LAST"))
-        # des = round(float(fieldData.getElementAsString("FULL_REPO_PX_MID")),2)
-        # msg.getElement('securityData').getElementAsString('security')
         print('retrieve done')
 
 if __name__ == "__main__":
@@ -143,23 +117,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print "Ctrl+C pressed. Stopping..."
 
-__copyright__ = """
-Copyright 2012. Bloomberg Finance L.P.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to
-deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:  The above
-copyright notice and this permission notice shall be included in all copies
-or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-IN THE SOFTWARE.
-"""
