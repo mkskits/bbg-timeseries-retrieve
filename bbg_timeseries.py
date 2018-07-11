@@ -18,32 +18,43 @@ def parseCmdLine():
                       metavar="tcpPort",
                       default=8194)
 
+    parser.add_option("--security1", help="security 1", type="string", default='EURUSD BGN Curncy')
+    parser.add_option("--security2", help="security 2", type="string", default='')
+    parser.add_option("--security3", help="security 3", type="string", default='')
+    parser.add_option("--security4", help="security 3", type="string", default='')
+    parser.add_option("--security5", help="security 3", type="string", default='')
+    parser.add_option("--security6", help="security 3", type="string", default='')
+    parser.add_option("--security7", help="security 3", type="string", default='')
+    parser.add_option("--security8", help="security 3", type="string", default='')
+    parser.add_option("--security9", help="security 3", type="string", default='')
+    parser.add_option("--security10", help="security 3", type="string", default='')
+
     (options, args) = parser.parse_args()
 
     return options
 
-
 def main():
     options = parseCmdLine()
 
+    print(options)
     # Fill SessionOptions
     sessionOptions = blpapi.SessionOptions()
     sessionOptions.setServerHost(options.host)
     sessionOptions.setServerPort(options.port)
 
-    # print "Connecting to %s:%s" % (options.host, options.port)
+    print "Connecting to %s:%s" % (options.host, options.port)
     # Create a Session
     session = blpapi.Session(sessionOptions)
 
     # Start a Session
     if not session.start():
-        # print "Failed to start session."
+        print "Failed to start session."
         return
 
     try:
         # Open service to get historical data from
         if not session.openService("//blp/refdata"):
-            # print "Failed to open //blp/refdata"
+            print "Failed to open //blp/refdata"
             return
 
         # Obtain previously opened service
@@ -52,24 +63,43 @@ def main():
         # Create and fill the request for the historical data
         request = refDataService.createRequest("HistoricalDataRequest")
         # request.getElement("securities").appendValue("IBM US Equity")
-        request.getElement("securities").appendValue("EURUSD BGN Curncy")
-        request.getElement("securities").appendValue("USDCHF BGN Curncy")
+        if options.security1 != '':
+            request.getElement("securities").appendValue(options.security1)
+        if options.security2 != '':
+            request.getElement("securities").appendValue(options.security2)
+        if options.security3 != '':
+            request.getElement("securities").appendValue(options.security3)
+        if options.security4 != '':
+            request.getElement("securities").appendValue(options.security4)
+        if options.security5 != '':
+            request.getElement("securities").appendValue(options.security5)
+        if options.security6 != '':
+            request.getElement("securities").appendValue(options.security6)
+        if options.security7 != '':
+            request.getElement("securities").appendValue(options.security7)
+        if options.security8 != '':
+            request.getElement("securities").appendValue(options.security8)
+        if options.security9 != '':
+            request.getElement("securities").appendValue(options.security9)
+        if options.security10 != '':
+            request.getElement("securities").appendValue(options.security10)
+
         request.getElement("fields").appendValue("PX_LAST")
         request.getElement("fields").appendValue("OPEN")
         request.set("periodicityAdjustment", "ACTUAL")
         request.set("periodicitySelection", "DAILY")
         request.set("startDate", "20180704")
         request.set("endDate", "20180705")
-        request.set("maxDataPoints", 100)
+        request.set("maxDataPoints", 10000)
 
-        # print "Sending Request:", request
+        print "Sending Request:", request
         # Send the request
         session.sendRequest(request)
 
         # Process received events
         i=0
         columns = ['OPEN', 'LAST', 'DATE', 'SEC']
-        dftt = pd.DataFrame([[1, 1, 1, 1]], columns=columns)
+        dftt = pd.DataFrame(columns=columns)
         pd_data = pd.DataFrame(columns=columns)
 
         while(True):
@@ -91,13 +121,8 @@ def main():
                         px_last = test.getElementAsFloat('PX_LAST')
                         print(px_last)
                         d = {'col1': [1, 2], 'col2': [3, 4]}
-                        df = pd.DataFrame(data=d)
                         dftt = pd.DataFrame([[px_open, px_last, date, sec]], columns=columns)
-                        # print d
-                        # print dftt
-                        pd_data.append(dftt, ignore_index=True)
-                        # dft.set_index(date, inplace=True, drop=False, append=False)
-                        print('t')
+                        pd_data = pd_data.append(dftt, ignore_index=True)
                 except:
                     pass
 
