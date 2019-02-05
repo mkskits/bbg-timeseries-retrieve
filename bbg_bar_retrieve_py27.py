@@ -105,6 +105,9 @@ def processMessage(msg):
     n = 0
     # set up pandas
     columns = ['Datetime', 'Open', 'High', 'Low', 'Close', 'NumEvents', 'Volume']
+    dftt = pd.DataFrame(columns=columns)
+    pd_data = pd.DataFrame(columns=columns)
+
     for bar in data.values():
         time = bar.getElementAsDatetime(TIME)
         open = bar.getElementAsFloat(OPEN)
@@ -120,6 +123,8 @@ def processMessage(msg):
         print "%s\t\t%.3f\t\t%.3f\t\t%.3f\t\t%.3f\t\t%d\t\t%d" % \
             (time.strftime("%m/%d/%y %H:%M"), open, high, low, close,
              numEvents, volume)
+        dftt = pd.DataFrame([[(time.strftime("%m/%d/%y %H:%M")), open, high, low, close, numEvents, volume]], columns=columns)
+        pd_data = pd_data.append(dftt, ignore_index=True)
         n = n+1
 
     # print datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
@@ -230,6 +235,7 @@ def main():
         # Stop the session
         print "[" + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S') + "]: " + "data retrieve " + options.security + " executed"
         session.stop()
+        print 'debugger'
 
 if __name__ == "__main__":
     print "IntradayBarExample"
