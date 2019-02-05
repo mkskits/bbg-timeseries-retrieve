@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/bbg_timeseries.py" line="11" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb7abce1-665d-4a47-a3fb-a26a12fc8e12" name="Default" comment="" />
+    <list default="true" id="eb7abce1-665d-4a47-a3fb-a26a12fc8e12" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntradayBarExample_mk.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleIntradayBarExample_mk.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbg_bar_retrieve_py27.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erz0_retrieve.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pickle_read.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stat_arb_retrieve.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/svm_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bbg_timeseries.py" afterPath="$PROJECT_DIR$/bbg_timeseries.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bbg_timeseries.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bbg_timeseries.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbg_timeseries.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="22" column="80" lean-forward="false" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="97" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -26,71 +39,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="optparse.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/optparse.py">
+      <file leaf-file-name="stat_arb_retrieve.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stat_arb_retrieve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="606" column="0" lean-forward="false" selection-start-line="606" selection-start-column="0" selection-end-line="606" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/frame.py">
+      <file leaf-file-name="bbg_bar_retrieve_py27.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bbg_bar_retrieve_py27.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85102">
-              <caret line="5059" column="0" lean-forward="false" selection-start-line="5059" selection-start-column="0" selection-end-line="5059" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="internals.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/internals.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59381">
-              <caret line="3526" column="0" lean-forward="false" selection-start-line="3526" selection-start-column="0" selection-end-line="3526" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39984">
-              <caret line="2371" column="34" lean-forward="false" selection-start-line="2371" selection-start-column="34" selection-end-line="2371" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydev_monkey_qt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey_qt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="442">
+              <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+              <folding>
+                <element signature="e#25#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print</find>
+      <find>open</find>
+      <find>time</find>
+      <find>[</find>
+      <find>placehol</find>
+      <find>data retrieve</find>
+      <find>retr</find>
+      <find>n, &quot;</find>
+      <find>columns</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,6 +91,17 @@
       <list>
         <option value="$PROJECT_DIR$/SimpleHistoryExample.py" />
         <option value="$PROJECT_DIR$/bbg_timeseries.py" />
+        <option value="$PROJECT_DIR$/svm_test.py" />
+        <option value="$PROJECT_DIR$/eru0.py" />
+        <option value="$PROJECT_DIR$/pickle_read.py" />
+        <option value="//CHRB1025.CORP.GWPNET.COM/homes/7/S3QH78/Documents/ipython/eru0.py" />
+        <option value="$PROJECT_DIR$/../../NEX-hist/NEX-hist.py" />
+        <option value="$PROJECT_DIR$/erz0_retrieve.py" />
+        <option value="$PROJECT_DIR$/stat_arb_retrieve.py" />
+        <option value="$PROJECT_DIR$/SimpleIntradayBarExample.py" />
+        <option value="$PROJECT_DIR$/IntradayBarExample.py" />
+        <option value="$PROJECT_DIR$/IntradayBarExample_mk.py" />
+        <option value="$PROJECT_DIR$/bbg_bar_retrieve_py27.py" />
       </list>
     </option>
   </component>
@@ -161,7 +162,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/pythonxy2.7.10.0/python27/python2.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NEX-hist/NEX-hist-multi.py" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -171,6 +172,11 @@
       </console-settings>
     </option>
     <option name="myShowDebugConsoleByDefault" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SRDEV\P_Python\BBG_RETRIEVE\TimeSeries_Retrieve" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,8 +190,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bbg_timeseries">
-    <configuration name="SimpleHistoryExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bbg_bar_retrieve_py27">
+    <configuration name="IntradayBarExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -197,12 +203,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TimeSeries_Retrieve" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimpleHistoryExample.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IntradayBarExample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="bbg_timeseries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="IntradayBarExample_mk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -214,57 +220,76 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TimeSeries_Retrieve" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbg_timeseries.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IntradayBarExample_mk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="clipboard_close" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SimpleIntradayBarExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeSeries_Retrieve" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../clipboard_close.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="exception" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/blpapi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TimeSeries_Retrieve" />
-      <option name="SCRIPT_NAME" value="C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/blpapi/exception.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimpleIntradayBarExample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.bbg_timeseries" />
-      <item index="1" class="java.lang.String" itemvalue="Python.clipboard_close" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SimpleHistoryExample" />
-      <item index="3" class="java.lang.String" itemvalue="Python.exception" />
+    <configuration name="bbg_bar_retrieve_py27" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TimeSeries_Retrieve" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbg_bar_retrieve_py27.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="stat_arb_retrieve" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TimeSeries_Retrieve" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stat_arb_retrieve.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.stat_arb_retrieve" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SimpleIntradayBarExample" />
+      <item index="2" class="java.lang.String" itemvalue="Python.IntradayBarExample" />
+      <item index="3" class="java.lang.String" itemvalue="Python.IntradayBarExample_mk" />
+      <item index="4" class="java.lang.String" itemvalue="Python.bbg_bar_retrieve_py27" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.bbg_timeseries" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SimpleHistoryExample" />
-        <item index="2" class="java.lang.String" itemvalue="Python.exception" />
-        <item index="3" class="java.lang.String" itemvalue="Python.clipboard_close" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.bbg_bar_retrieve_py27" />
+        <item index="1" class="java.lang.String" itemvalue="Python.IntradayBarExample_mk" />
+        <item index="2" class="java.lang.String" itemvalue="Python.IntradayBarExample" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SimpleIntradayBarExample" />
+        <item index="4" class="java.lang.String" itemvalue="Python.stat_arb_retrieve" />
       </list>
     </recent_temporary>
   </component>
@@ -283,20 +308,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1720" y="0" width="1720" height="1400" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18251173" sideWeight="0.49607182" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996893" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19542253" sideWeight="0.49607182" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3082298" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18251173" sideWeight="0.5039282" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.310559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18251173" sideWeight="0.5039282" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13028169" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -314,15 +340,50 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bbg_timeseries.py</url>
-          <line>135</line>
+          <line>140</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pickle_read.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../NEX-hist/NEX-hist.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/erz0_retrieve.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/IntradayBarExample_mk.py</url>
+          <line>225</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16745">
+          <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey_qt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bbg_timeseries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -337,7 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85102">
           <caret line="5059" column="0" lean-forward="false" selection-start-line="5059" selection-start-column="0" selection-end-line="5059" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -345,7 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59381">
           <caret line="3526" column="0" lean-forward="false" selection-start-line="3526" selection-start-column="0" selection-end-line="3526" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -353,7 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39984">
           <caret line="2371" column="34" lean-forward="true" selection-start-line="2371" selection-start-column="34" selection-end-line="2371" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -369,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,15 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39984">
-          <caret line="2371" column="34" lean-forward="false" selection-start-line="2371" selection-start-column="34" selection-end-line="2371" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -465,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59381">
           <caret line="3526" column="0" lean-forward="false" selection-start-line="3526" selection-start-column="0" selection-end-line="3526" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -473,32 +520,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85102">
           <caret line="5059" column="0" lean-forward="false" selection-start-line="5059" selection-start-column="0" selection-end-line="5059" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/optparse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="10268">
           <caret line="606" column="0" lean-forward="false" selection-start-line="606" selection-start-column="0" selection-end-line="606" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1461">
+          <caret line="2149" column="0" lean-forward="false" selection-start-line="2149" selection-start-column="0" selection-end-line="2149" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/blp/data/bar_to_dataframe_sync.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/blp/data/bar_to_dataframe_sync (1).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/blp/data/bar_to_dataframe_sync (2).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eru0.py" />
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/io/pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svm_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:////CHRB1025.CORP.GWPNET.COM/homes/7/S3QH78/Documents/ipython/eru0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14943">
+          <caret line="885" column="0" lean-forward="false" selection-start-line="885" selection-start-column="0" selection-end-line="885" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/matplotlib/dates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6664">
+          <caret line="417" column="29" lean-forward="false" selection-start-line="417" selection-start-column="29" selection-end-line="417" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pickle_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../NEX-hist/NEX-hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="50" lean-forward="false" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../NEX-hist/NEX-hist-multi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/core/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="2837" column="25" lean-forward="true" selection-start-line="2837" selection-start-column="10" selection-end-line="2837" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/SimpleHistoryExample.py" />
+    <entry file="file://$USER_HOME$/Desktop/intraday.py" />
+    <entry file="file://$PROJECT_DIR$/erz0_retrieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bbg_timeseries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="22" column="80" lean-forward="false" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="97" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntradayTickExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleIntradayBarExample_mk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntradayBarExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleIntradayBarExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="65" column="46" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="46" />
+          <folding>
+            <element signature="e#31#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntradayBarExample_mk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="31" lean-forward="false" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/pythonxy2.7.10.0/python27/Lib/site-packages/pandas/tools/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="804" column="0" lean-forward="false" selection-start-line="804" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="1595" column="0" lean-forward="false" selection-start-line="1595" selection-start-column="0" selection-end-line="1595" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stat_arb_retrieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbg_bar_retrieve_py27.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

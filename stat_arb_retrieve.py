@@ -2,6 +2,8 @@ import blpapi
 from optparse import OptionParser
 import pandas as pd
 import pickle
+import datetime as dt
+
 
 
 def parseCmdLine():
@@ -20,7 +22,7 @@ def parseCmdLine():
                       metavar="tcpPort",
                       default=8194)
 
-    parser.add_option("--security1", help="security 1", type="string", default='EURUSD BGN Curncy')
+    parser.add_option("--security1", help="security 1", type="string", default='BBDXY Index')
     parser.add_option("--security2", help="security 2", type="string", default='')
     parser.add_option("--security3", help="security 3", type="string", default='')
     parser.add_option("--security4", help="security 3", type="string", default='')
@@ -45,19 +47,19 @@ def main():
     sessionOptions.setServerHost(options.host)
     sessionOptions.setServerPort(options.port)
 
-    print("Connecting to %s:%s" % (options.host, options.port))
+    print "Connecting to %s:%s" % (options.host, options.port)
     # Create a Session
     session = blpapi.Session(sessionOptions)
 
     # Start a Session
     if not session.start():
-        print("Failed to start session.")
+        print "Failed to start session."
         return
 
     try:
         # Open service to get historical data from
         if not session.openService("//blp/refdata"):
-            print("Failed to open //blp/refdata")
+            print "Failed to open //blp/refdata"
             return
 
         # Obtain previously opened service
@@ -91,17 +93,19 @@ def main():
         request.getElement("fields").appendValue("OPEN")
         request.set("periodicityAdjustment", "ACTUAL")
         request.set("periodicitySelection", "DAILY")
-        request.set("startDate", "20170108")
-        request.set("endDate", "20180910")
+        # dateformat YYYYMMDD
+        request.set("startDate", "20140414")
+        end_date = dt.datetime.today().strftime("%Y") + dt.datetime.today().strftime("%m") + dt.datetime.today().strftime("%d")
+        request.set("endDate", end_date)
         request.set("maxDataPoints", 10000)
 
-        print("Sending Request:", request)
+        print "Sending Request:", request
         # Send the request
         session.sendRequest(request)
 
         # Process received events
         i=0
-        columns = ['OPEN', 'LAST', 'DATE', 'SEC']
+        columns = ['DATE', 'LAST', 'SEC']
         dftt = pd.DataFrame(columns=columns)
         pd_data = pd.DataFrame(columns=columns)
 
@@ -113,18 +117,18 @@ def main():
                 # print 'placeholder'
                 i = i + 1
                 try:
-                    print(msg.getElement('securityData').getElementAsString('security'))
+                    print msg.getElement('securityData').getElementAsString('security')
                     for test in msg.getElement('securityData').getElement('fieldData').values():
                         del dftt
                         sec = msg.getElement('securityData').getElementAsString('security')
                         date = test.getElementAsDatetime('date')
                         print(date)
-                        px_open = test.getElementAsFloat('OPEN')
-                        print(px_open)
+                        #px_open = test.getElementAsFloat('OPEN')
+                        #print(px_open)
                         px_last = test.getElementAsFloat('PX_LAST')
                         print(px_last)
                         d = {'col1': [1, 2], 'col2': [3, 4]}
-                        dftt = pd.DataFrame([[px_open, px_last, date, sec]], columns=columns)
+                        dftt = pd.DataFrame([[date, px_last, sec]], columns=columns)
                         pd_data = pd_data.append(dftt, ignore_index=True)
                 except:
                     pass
@@ -136,8 +140,8 @@ def main():
         # Stop the session
         session.stop()
 
-        pd_data.to_pickle(r'C:\SRDEV\Data\BBG\bbg_data.pickle')
-        pd_data.to_csv(r'C:\SRDEV\Data\BBG\bbg_data.csv', header = True, index = False)
+        pd_data.to_pickle(r'C:\SRDEV\Data\BBG\eru0_daily.pickle')
+        pd_data.to_csv(r'C:\SRDEV\Data\BBG\eru0_daily.csv', header = True, index = False)
         print('retrieve done')
 
 if __name__ == "__main__":
@@ -145,6 +149,6 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("Ctrl+C pressed. Stopping...")
+        print "Ctrl+C pressed. Stopping..."
 
 
