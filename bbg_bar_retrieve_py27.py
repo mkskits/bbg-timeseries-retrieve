@@ -22,6 +22,7 @@ CATEGORY = blpapi.Name("category")
 MESSAGE = blpapi.Name("message")
 
 
+
 def checkDateTime(option, opt, value):
     try:
         return datetime.datetime.strptime(value, "%Y-%m-%d %H:%M:%S")
@@ -83,7 +84,8 @@ def parseCmdLine():
                       type="datetime",
                       help="end date/time (default: %default)",
                       metavar="endDateTime",
-                      default=datetime.datetime(2019, 01, 29, 15, 35, 0))
+                      # default=datetime.datetime(2019, 01, 29, 15, 35, 0))
+                      default=round_time(datetime.datetime.now(), round_to=900))
     parser.add_option("-g",
                       dest="gapFillInitialBar",
                       help="gapFillInitialBar",
@@ -91,7 +93,8 @@ def parseCmdLine():
                       default=False)
 
     (options, args) = parser.parse_args()
-
+    global strSecurity
+    strSecurity = options.security
     return options
 
 def printErrorInfo(leadingStr, errorInfo):
@@ -129,6 +132,9 @@ def processMessage(msg):
 
     # print datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
     print n, " rows"
+    pd_data = pd_data.set_index('Datetime')
+    pd_data.to_pickle("C:\\SRDEV\\D_Data\\" + strSecurity.replace(' ','_') + ".pkl")
+    print "debugger"
 
 def processResponseEvent(event):
     for msg in event:
@@ -201,6 +207,13 @@ def getPreviousTradingDate():
 
         if tradedOn.weekday() not in [5, 6]:
             return tradedOn
+
+def round_time(dt=None, round_to=60):
+   if dt == None:
+       dt = datetime.datetime.now()
+   seconds = (dt - dt.min).seconds
+   rounding = (seconds+round_to/2) // round_to * round_to
+   return dt + datetime.timedelta(0,rounding-seconds,-dt.microsecond)
 
 
 def main():
