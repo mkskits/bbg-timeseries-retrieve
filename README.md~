@@ -7,8 +7,6 @@ Notes:
 2) Only one security can be specified
 3) Only one event can be specified
   
-Output stored in *.pkl file with under %security%.pkl
-
 Options:  
   -h, --help            show this help message and exit  
   -a ipAddress, --ip=ipAddress  
